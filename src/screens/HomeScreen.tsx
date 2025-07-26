@@ -1,10 +1,9 @@
-import { useNavigation } from "@react-navigation/native";
 import React from "react";
-import { Button, StatusBar, StyleSheet } from "react-native";
+import { Button, StyleSheet } from "react-native";
 import { Text, View } from "react-native";
+import { StatusBar } from "expo-status-bar";
 
-export function HomeScreen() {
-  const navigation = useNavigation();
+export function HomeScreen({ navigation }: any) {
 
   return (
     <View style={styles.container}>
@@ -14,6 +13,8 @@ export function HomeScreen() {
         title="Gallery"
         onPress={() => navigation.navigate("gallery")}
       />
+
+      <StatusBar style="auto" />
     </View>
   );
 }
@@ -21,7 +22,7 @@ export function HomeScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "red",
+    backgroundColor: "#b1b1b1ff",
     paddingTop: 30,
   },
   title: {

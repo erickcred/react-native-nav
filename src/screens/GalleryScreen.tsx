@@ -1,10 +1,8 @@
-import { useNavigation } from "@react-navigation/native";
 import React from "react";
 import { Button, StatusBar, StyleSheet } from "react-native";
 import { Text, View } from "react-native";
 
-export function GalleryScreen() {
-  const navigation = useNavigation();
+export function GalleryScreen({ navigation }: any) {
 
   return (
     <View style={styles.container}>
@@ -21,7 +19,7 @@ export function GalleryScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "blue",
+    backgroundColor: "#b1b1b1ff",
     paddingTop: 30,
   },
   title: {

@@ -17,19 +17,27 @@ import { GalleryScreen } from "../screens/GalleryScreen";
 //   }
 // });
 
+// export const StackNavigation = createStaticNavigation(stackRouter);
+
+
 const { Screen, Navigator } = createNativeStackNavigator();
 
 export function StackRouter() {
   return (
     <Navigator screenOptions={{
-      headerStyle: { backgroundColor: 'tomato' },
-      headerShown: true,
-      title: "React-nav",
+      headerStyle: { backgroundColor: "#b1b1b1ff" },
+      // headerShown: true,
+      // title: "React-nav",
     }}>
-      <Screen name="home" component={HomeScreen} />
+      <Screen
+        name="home"
+        component={HomeScreen}
+        options={{
+          title: "OI",
+          headerShown: false,
+        }}
+      />
       <Screen name="gallery" component={GalleryScreen} />
     </Navigator>
   )
 }
-
-// export const StackNavigation = createStaticNavigation(stackRouter);
