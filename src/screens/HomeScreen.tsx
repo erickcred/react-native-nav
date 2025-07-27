@@ -14,6 +14,11 @@ export function HomeScreen({ navigation }: any) {
         onPress={() => navigation.navigate("gallery")}
       />
 
+      <Button
+        title="Settings"
+        onPress={() => navigation.navigate("home-bottom-tabs")}
+      />
+
       <StatusBar style="auto" />
     </View>
   );

@@ -3,6 +3,7 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
 import { HomeScreen } from "../screens/HomeScreen";
 import { GalleryScreen } from "../screens/GalleryScreen";
+import { ContactScreen } from "../screens/bottom-tabs/ContactScreen";
 
 // const stackRouter = createNativeStackNavigator({
 //   initialRouteName: "Home",
@@ -22,7 +23,7 @@ import { GalleryScreen } from "../screens/GalleryScreen";
 
 const { Screen, Navigator } = createNativeStackNavigator();
 
-export function StackRouter() {
+export function StackRoutes() {
   return (
     <Navigator screenOptions={{
       headerStyle: { backgroundColor: "#b1b1b1ff" },
